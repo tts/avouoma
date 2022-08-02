@@ -1,5 +1,5 @@
 library(shiny)
-library(dplyr)
+library(sf)
 library(leaflet)
 
 Rivers <- readRDS("joet_m.RDS")
@@ -18,7 +18,7 @@ ui <- bootstrapPage(
                             label = "Waterway",
                             choices = targets,
                             selected = "Rivers"),
-                HTML("<div><br/><a target='blank' href='http://tuijasonkkila.fi/blog/2018/01/streets-of-helsinki/'>[About TBA]</a></div>")
+                HTML("<div><br/><a target='blank' href='https://github.com/tts/avouoma/'>Code</a></div>")
   )
 )
 
